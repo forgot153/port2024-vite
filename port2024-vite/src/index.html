@@ -22,12 +22,33 @@
     </div>
 
     <!-- header -->
-    <header id="header">
-        header
+    <header id="header" role="banner" >
+        <div class="header__inner">
+            <!-- 로고 -->
+            <div class="header__logo">
+                <h1><a href="#">portfolio 
+                    <em>
+                    vite
+                </em>
+                </a></h1>
+            </div>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#intro">intro</a></li>
+                    <li><a href="#skill">skill</a></li>
+                    <li><a href="#project">project</a></li>
+                    <li><a href="#port">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header__nav__mobile" id="headerToggle" aria-controls="primary-menu" aria-expanded="false" role="button" tabindex="0">
+                <span></span>
+            </div>
+        </div>
     </header>
 
     <!-- main -->
-    <main id="main">
+    <main id="main" role="main">
         <!-- intro -->
         <section id="intro">
             intro
@@ -55,9 +76,11 @@
     </main>
     
     <!-- footer -->
-    <footer id="footer">
+    <footer id="footer" role="contentinfo">
         footer
     </footer>
+
+
     <!-- 자바스크립트 모듈 방식으로 사용 -->
     <script type="module" src="assets/js/main.js"></script>
 </body>
